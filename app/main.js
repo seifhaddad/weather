@@ -36,13 +36,13 @@ function addItemToList($list, item){
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-  getJSONP('http://api.wunderground.com/api/afd7642ae83736bc/forecast10day/q/37217.json', "myAwesomeFunction");
+  getJSONP('https://api.wunderground.com/api/afd7642ae83736bc/forecast10day/q/37217.json', "myAwesomeFunction");
   var $form = document.getElementById("zipcodeform");
   $form.addEventListener("submit", function(event){
     event.preventDefault();
     var $numb = $form.querySelector("input[type='number']").value;
     console.log($numb);
-    var newUrl = "http://api.wunderground.com/api/afd7642ae83736bc/forecast10day/q/"+ $numb + ".json";
+    var newUrl = "https://api.wunderground.com/api/afd7642ae83736bc/forecast10day/q/"+ $numb + ".json";
     console.log(newUrl);
     getJSONP(newUrl, "myAwesomeFunction");
   });
