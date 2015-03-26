@@ -1,8 +1,9 @@
 
 body{
- background-image: url("../img/weather.jpg");
+ background-image: url("img/weather.jpg");
  background-size: cover;
  background-repeat: no-repeat;
+ background-color: black !important;
 }
 
 li{

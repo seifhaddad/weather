@@ -19,8 +19,8 @@ function addItemToList($list, item){
         var $high = document.createElement("p");
         var $low = document.createElement("p");
         var $day = document.createElement("p");
-        //$li.innerHTML = item.forecast.simpleforecast.forecastday[0].avehumidity;
-        //$list.appendChild($li);
+        $li.innerHTML = item.forecast.simpleforecast.forecastday[0].avehumidity;
+        $list.appendChild($li);
         $icon.src = item.forecast.simpleforecast.forecastday[i].icon_url;
         $high.innerHTML = item.forecast.simpleforecast.forecastday[i].high.fahrenheit;
         $low.innerHTML = item.forecast.simpleforecast.forecastday[i].low.fahrenheit;
@@ -31,8 +31,8 @@ function addItemToList($list, item){
         $li.appendChild($low);
         $list.appendChild($li);
     }
-   // $li.innerHTML = item.forcast;
-   //$list.appendChild($li);
+   $li.innerHTML = item.forcast;
+   $list.appendChild($li);
 }
 
 document.addEventListener("DOMContentLoaded", function(){
