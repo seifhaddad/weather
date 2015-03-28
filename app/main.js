@@ -31,8 +31,8 @@ function addItemToList($list, item){
         $li.appendChild($low);
         $list.appendChild($li);
     }
-   $li.innerHTML = item.forcast;
-   $list.appendChild($li);
+  //  $li.innerHTML = item.forcast;
+  //  $list.appendChild($li);
 }
 
 document.addEventListener("DOMContentLoaded", function(){
